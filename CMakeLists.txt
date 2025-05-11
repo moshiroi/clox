@@ -4,7 +4,16 @@ project(clox C)
 set(CMAKE_C_STANDARD 23)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# add_subdirectory(lib)
-add_executable(clox src/main.c)
-# target_link_libraries(clox PRIVATE lib)
-install(TARGETS clox RUNTIME DESTINATION bin)
+set(SOURCES
+    src/chunk.c
+    src/memory.c
+)
+
+set(HEADERS
+    src/chunk.h
+    src/common.h
+    src/header.h
+    src/memory.h
+)
+
+add_executable(clox src/main.c ${SOURCES} ${HEADERS})
