@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 // TODO: GROW_CAPACITY macro fails to properly expand when using below const
-#define MIN_ARR_THRESHOLD = 8;
+#define MIN_ARR_THRESHOLD 8;
 
 #define GROW_CAPACITY(capacity)                                                \
   ((capacity) < (8) ? (8) : (capacity) * 2)

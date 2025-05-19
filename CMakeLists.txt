@@ -7,6 +7,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(SOURCES
     src/chunk.c
     src/memory.c
+    src/debug.c
 )
 
 set(HEADERS
@@ -14,6 +15,8 @@ set(HEADERS
     src/common.h
     src/header.h
     src/memory.h
+    src/debug.h
+    src/value.h
 )
 
 add_executable(clox src/main.c ${SOURCES} ${HEADERS})
