@@ -23,7 +23,7 @@ int disassemble_instruction(Chunk *chunk, int offset){
     case OP_CONSTANT:
       return constant_instruction("OP_CONSTANT", chunk, offset);
     default:
-      printf("Uknown instruction - %d\n", instruction);
+      printf("Unknown instruction - %d\n", instruction);
       return offset + 1;
   }  
 }
@@ -37,7 +37,7 @@ int simple_instruction(const char* name, int offset) {
 int constant_instruction(const char* name, Chunk* chunk, int offset) {
   uint8_t constant = chunk->code[offset+1]; //+1?
   printf("%-16s %4d '", name, constant);
-  print_value(chunk->constants->values[constant]);
+  print_value(chunk->constants.values[constant]);
   printf("\n");
   // **pointing to the next instr**
   return offset + 2; // +2 because -> 1 for instruction, 1 for operand

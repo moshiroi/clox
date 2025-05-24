@@ -14,7 +14,7 @@ typedef struct {
   int count;
   int capacity;
   uint8_t *code;
-  ValueArray *constants;
+  ValueArray constants;
 } Chunk;
 
 void init_chunk(Chunk *chunk);
