@@ -9,6 +9,7 @@ set(SOURCES
     src/memory.c
     src/debug.c
     src/value.c
+    src/vm.c
 )
 
 set(HEADERS
@@ -18,6 +19,7 @@ set(HEADERS
     src/memory.h
     src/debug.h
     src/value.h
+    src/vm.h
 )
 
 if(NOT CMAKE_BUILD_TYPE)
