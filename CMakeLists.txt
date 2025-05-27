@@ -20,4 +20,8 @@ set(HEADERS
     src/value.h
 )
 
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
+endif()
+
 add_executable(clox src/main.c ${SOURCES} ${HEADERS})

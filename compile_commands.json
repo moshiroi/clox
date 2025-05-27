@@ -1,20 +1,20 @@
 [
-{
-  "directory": "/Users/mohamed.shire/git/clox/build",
-  "command": "/nix/store/7vyr5q4p1hb9ya1d7zsgikdfzbzjmk4c-clang-wrapper-19.1.7/bin/clang   -std=gnu11 -arch arm64 -isysroot /nix/store/nkyq65sn7dlsy6qwym83zwc5w6kqf0y1-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mmacosx-version-min=11.3 -o CMakeFiles/clox.dir/src/main.c.o -c /Users/mohamed.shire/git/clox/src/main.c",
-  "file": "/Users/mohamed.shire/git/clox/src/main.c",
-  "output": "CMakeFiles/clox.dir/src/main.c.o"
-},
-{
-  "directory": "/Users/mohamed.shire/git/clox/build",
-  "command": "/nix/store/7vyr5q4p1hb9ya1d7zsgikdfzbzjmk4c-clang-wrapper-19.1.7/bin/clang   -std=gnu11 -arch arm64 -isysroot /nix/store/nkyq65sn7dlsy6qwym83zwc5w6kqf0y1-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mmacosx-version-min=11.3 -o CMakeFiles/clox.dir/src/chunk.c.o -c /Users/mohamed.shire/git/clox/src/chunk.c",
-  "file": "/Users/mohamed.shire/git/clox/src/chunk.c",
-  "output": "CMakeFiles/clox.dir/src/chunk.c.o"
-},
-{
-  "directory": "/Users/mohamed.shire/git/clox/build",
-  "command": "/nix/store/7vyr5q4p1hb9ya1d7zsgikdfzbzjmk4c-clang-wrapper-19.1.7/bin/clang   -std=gnu11 -arch arm64 -isysroot /nix/store/nkyq65sn7dlsy6qwym83zwc5w6kqf0y1-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mmacosx-version-min=11.3 -o CMakeFiles/clox.dir/src/memory.c.o -c /Users/mohamed.shire/git/clox/src/memory.c",
-  "file": "/Users/mohamed.shire/git/clox/src/memory.c",
-  "output": "CMakeFiles/clox.dir/src/memory.c.o"
-}
+  {
+    "directory": "/Users/mohamed.shire/git/clox/build",
+    "command": "/nix/store/7vyr5q4p1hb9ya1d7zsgikdfzbzjmk4c-clang-wrapper-19.1.7/bin/clang   -std=gnu11 -isysroot /nix/store/nkyq65sn7dlsy6qwym83zwc5w6kqf0y1-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mmacosx-version-min=11.3 -o CMakeFiles/clox.dir/src/main.c.o -c /Users/mohamed.shire/git/clox/src/main.c",
+    "file": "/Users/mohamed.shire/git/clox/src/main.c",
+    "output": "CMakeFiles/clox.dir/src/main.c.o"
+  },
+  {
+    "directory": "/Users/mohamed.shire/git/clox/build",
+    "command": "/nix/store/7vyr5q4p1hb9ya1d7zsgikdfzbzjmk4c-clang-wrapper-19.1.7/bin/clang   -std=gnu11 -isysroot /nix/store/nkyq65sn7dlsy6qwym83zwc5w6kqf0y1-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mmacosx-version-min=11.3 -o CMakeFiles/clox.dir/src/chunk.c.o -c /Users/mohamed.shire/git/clox/src/chunk.c",
+    "file": "/Users/mohamed.shire/git/clox/src/chunk.c",
+    "output": "CMakeFiles/clox.dir/src/chunk.c.o"
+  },
+  {
+    "directory": "/Users/mohamed.shire/git/clox/build",
+    "command": "/nix/store/7vyr5q4p1hb9ya1d7zsgikdfzbzjmk4c-clang-wrapper-19.1.7/bin/clang   -std=gnu11 -isysroot /nix/store/nkyq65sn7dlsy6qwym83zwc5w6kqf0y1-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mmacosx-version-min=11.3 -o CMakeFiles/clox.dir/src/memory.c.o -c /Users/mohamed.shire/git/clox/src/memory.c",
+    "file": "/Users/mohamed.shire/git/clox/src/memory.c",
+    "output": "CMakeFiles/clox.dir/src/memory.c.o"
+  }
 ]
