@@ -20,7 +20,7 @@ typedef enum {
 } InterpretResult;
 
 void init_vm();
-InterpretResult interpret(Chunk* chunk);
+InterpretResult interpret(char* source);
 void free_vm();
 
 

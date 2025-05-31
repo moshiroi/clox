@@ -2,6 +2,7 @@
 #include "vm.h"
 #include "chunk.h"
 #include "common.h"
+#include "compiler.h"
 #include "debug.h"
 #include "value.h"
 #include <stdio.h>
@@ -40,6 +41,7 @@ static InterpretResult run() {
   
 
   for (;;) {
+// Print the stack values + dissasemble instruction in debug mode
 #ifdef DEBUG_TRACE_EXECUTION
   printf("          ");
   for (Value* slot = vm.stack; slot < vm.stack_top; slot++) {
@@ -89,8 +91,7 @@ static InterpretResult run() {
 #undef BINARY_OP
 }
 
-InterpretResult interpret(Chunk *chunk) {
-  vm.chunk = chunk;
-  vm.ip = chunk->code;
-  return run();
+InterpretResult interpret(char *source) {
+  compile(source);
+  return INTERPRET_OK;
 }
