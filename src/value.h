@@ -3,7 +3,7 @@
 
 #include "common.h"
 
-typedef double Value;
+typedef double Value; // All numbers in lox will be interpreted as doubles
 
 void print_value(Value value);
 

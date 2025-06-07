@@ -92,6 +92,20 @@ static InterpretResult run() {
 }
 
 InterpretResult interpret(char *source) {
-  compile(source);
-  return INTERPRET_OK;
+  Chunk chunk; // Chunk = Chunk of bytecode instructions
+  init_chunk(&chunk);
+  
+  // Compiling will populate the chunk with bytecode 
+  if(!compile(source, &chunk)){
+    free_chunk(&chunk);
+    return INTERPRET_COMPILE_ERROR;
+  }
+
+  vm.chunk = &chunk; // Chunk being processed
+  vm.ip = vm.chunk->code; // Instruction being processed
+
+  InterpretResult result = run();
+  
+  free_chunk(&chunk);
+  return result;
 }

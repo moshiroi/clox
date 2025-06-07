@@ -1,7 +1,7 @@
 #ifndef clox_scanner_h
 #define clox_scanner_h
 
-// NOTE: C tosses enum names in the top-level namespace
+// NOTE: C tosses enum names in the top-level namespace, so we prefix each variant
 typedef enum {
   // Single-character tokens.
   TOKEN_LEFT_PAREN, TOKEN_RIGHT_PAREN,
